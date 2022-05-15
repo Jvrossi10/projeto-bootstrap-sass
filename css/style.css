@@ -1,10 +1,6 @@
 @charset "UTF-8";
 body {
-  background-image: url("/img/bg-body.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: #f4f4f4;
 }
 
 .caixa-noticia {
@@ -35,11 +31,15 @@ body {
   transition: all 0.5s;
 }
 
-.caixa-noticia img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.carousel-inner .carousel-item img {
+  width: 700px;
+  height: 800px;
+}
+
+.carousel-inner {
+  -webkit-transition: opacity .5s ease-out, -webkit-transform .5s ease;
+  transition: opacity .5s ease-out, -webkit-transform .5s ease;
+  transition: transform .5s ease, opacity .5s ease-out;
+  transition: transform .5s ease, opacity .5s ease-out, -webkit-transform .5s ease;
 }
 /*# sourceMappingURL=style.css.map */
